@@ -1,0 +1,154 @@
+
+#container
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+
+.container img {
+  width: 1500;
+  height:700;
+}
+
+.container .btn {
+  position: absolute;
+  top: 101%;
+  left: 170%;
+  background-color: pink;
+  color: black;
+  font-size: 16px;
+  padding: 25px 30px;
+  
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+
+
+}
+
+#sidebar
+.w3-sidebar
+{
+height:75%;
+width:220px;
+background-color:navajowhite ;
+position:fixed!important;
+z-index:1;
+overflow:auto
+}
+
+.w3-bar-block 
+.w3-bar-item
+{
+width:100%;
+display:block;
+padding:10px;
+text-align:left;
+border:none;
+outline:0
+}
+
+.w3-button
+{
+border:none;
+display:inline-block;
+padding:10px;
+vertical-align:middle;
+text-decoration:none;
+text-align:center;
+cursor:pointer;
+
+}
+
+.w3-button:hover
+{
+color:#000!important;
+background-color:#ccc!important
+}
+
+#vedio
+.centered{
+position:absolute;
+color:greenyellow;
+top:70%;
+left:50%;
+font-size:40px;
+
+transform:translate(-50% ,50%);
+}
+
+#cards
+.img-full
+{
+margin:2%;
+position:relative;
+text-align:center;
+}
+
+.first-txt
+{
+position:absolute;
+bottom:-15px;
+left:25px;
+font-size:40px;
+color:white;
+}
+
+.column1 {
+  float: left;
+  width: 35.33%;
+  padding: 5px;
+height:25%;
+}
+.column2 {
+  float: left;
+  width: 60.33%;
+  padding: 10px;
+line-height:1.6;
+
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#flipcard
+
+.flip-card {
+  background-color: transparent;
+  width: 420px;
+  height: 320px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width:420px;
+  height: 320px;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position:absolute;
+  width:420px;
+  height: 320px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-back {
+  background-color:thistle;
+  color: black;
+  transform: rotateY(180deg);
+}
